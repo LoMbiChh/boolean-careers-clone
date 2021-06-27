@@ -1,41 +1,56 @@
 /* External fonts */
+
 @font-face {
     src: url(../fonts/Gilroy-Medium.ttf);
-	font-family: gilroy-medium;
+    font-family: gilroy-medium;
 }
 
 @font-face {
     src: url(../fonts/Gilroy-Bold.ttf);
-	font-family: gilroy-bold;
+    font-family: gilroy-bold;
 }
 
 @font-face {
     src: url(../fonts/Gilroy-ExtraBold.ttf);
-	font-family: gilroy-extraBold;
+    font-family: gilroy-extraBold;
 }
 
 @font-face {
     src: url(../fonts/Gilroy-Black.ttf);
-	font-family: gilroy-black;
+    font-family: gilroy-black;
 }
 
+
 /* CSS reset */
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
+
 /* Set fonts */
-h1, h2, h3, strong, th, td {
+
+h1,
+h2,
+h3,
+strong,
+th,
+td {
     font-family: gilroy-extraBold;
 }
 
-p, a, li, small {
+p,
+a,
+li,
+small {
     font-family: gilroy-medium;
 }
 
+
 /* Default button */
+
 .button {
     background-color: #006CFA;
     color: white !important;
@@ -47,7 +62,6 @@ p, a, li, small {
     background-color: #0CD977;
     text-decoration: none !important;
 }
-
 
 a {
     text-decoration: none;
@@ -65,7 +79,9 @@ a {
     border-radius: 100%;
 }
 
+
 /* Header */
+
 header {
     width: 100%;
     height: 110px;
@@ -120,7 +136,9 @@ header {
     text-decoration: underline;
 }
 
+
 /* Presentation section */
+
 .presentation_section {
     display: flex;
     justify-content: center;
@@ -138,7 +156,9 @@ header {
     width: 1080px;
 }
 
+
 /* Presentation content left */
+
 .presentation_content_left {
     height: 440px;
     width: 540px;
@@ -178,7 +198,9 @@ header {
     color: white !important;
 }
 
+
 /* Presentation content right */
+
 .presentation_content_right {
     height: 540px;
     width: 540px;
@@ -189,7 +211,9 @@ header {
     width: 540px;
 }
 
+
 /* Tech job section */
+
 .tech_job_section {
     display: flex;
     justify-content: center;
@@ -235,7 +259,9 @@ header {
     margin-left: 15px;
 }
 
+
 /* Info table section */
+
 .info_table_section {
     display: flex;
     flex-direction: column;
@@ -277,6 +303,7 @@ header {
 
 
 /* Start course section */
+
 .start_course_section {
     background: #F71668;
     display: flex;
@@ -305,6 +332,7 @@ header {
 
 
 /* Footer */
+
 footer {
     display: flex;
     justify-content: center;
@@ -315,13 +343,12 @@ footer {
     color: white;
 }
 
-
 .company_link_container {
     width: 1150px;
     margin-bottom: 50px;
 }
 
-.company_link_container > img {
+.company_link_container>img {
     height: 42px;
 }
 
@@ -355,7 +382,6 @@ footer {
     margin-left: 7px;
 }
 
-
 .company_info_container {
     width: 1150px;
     height: 150px;
@@ -366,7 +392,7 @@ footer {
     list-style: none;
 }
 
-.company_info_container > div {
+.company_info_container>div {
     float: left;
     width: 287.5px;
     height: 100%;
@@ -380,6 +406,8 @@ footer {
 
 .company_info_badges_container img {
     height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .company_info_link_list_container li {
@@ -393,8 +421,8 @@ footer {
     color: white;
 }
 
-.company_info_link_list_container ul li:nth-child(1) > a,
-.company_info_link_list_container ul li:nth-child(2) > a {
+.company_info_link_list_container ul li:nth-child(1)>a,
+.company_info_link_list_container ul li:nth-child(2)>a {
     font-size: 18px !important;
     color: #0CD977 !important;
 }
