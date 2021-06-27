@@ -66,7 +66,7 @@ a {
 }
 
 /* Header */
-.header {
+header {
     width: 100%;
     height: 110px;
 }
@@ -277,7 +277,7 @@ a {
 
 
 /* Start course section */
-.start_Course_section {
+.start_course_section {
     background: #F71668;
     display: flex;
     flex-direction: column;
@@ -287,18 +287,118 @@ a {
     padding-bottom: 50px;
 }
 
-.start_Course_section h2 {
+.start_course_section h2 {
     color: white;
     font-size: 40px;
     margin-bottom: 30px;
 }
 
-.start_Course_section a {
+.start_course_section a {
     float: left;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.start_Course_section a:hover {
+.start_course_section a:hover {
     background-color: #006CFA !important;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001632;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+
+.company_link_container {
+    width: 1150px;
+    margin-bottom: 50px;
+}
+
+.company_link_container > img {
+    height: 42px;
+}
+
+.company_link_container div {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.linkedin_img {
+    height: 30px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.instagram_img {
+    height: 30px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.facebook_img {
+    height: 30px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.youtube_img {
+    height: 20px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+.company_info_container {
+    width: 1150px;
+    height: 150px;
+    font-size: 18px;
+}
+
+.company_info_container ul {
+    list-style: none;
+}
+
+.company_info_container > div {
+    float: left;
+    width: 287.5px;
+    height: 100%;
+}
+
+.company_info_badges_container {
+    display: flex;
+    justify-content: center;
+    width: 575px !important;
+}
+
+.company_info_badges_container img {
+    height: 90px;
+}
+
+.company_info_link_list_container li {
+    text-align: right;
+    margin-bottom: 7px;
+}
+
+.company_info_link_list_container a {
+    text-decoration: underline;
+    font-size: 16px;
+    color: white;
+}
+
+.company_info_link_list_container ul li:nth-child(1) > a,
+.company_info_link_list_container ul li:nth-child(2) > a {
+    font-size: 18px !important;
+    color: #0CD977 !important;
+}
+
+.company_info_link_list_container a:hover {
+    color: #006CFA !important;
 }
