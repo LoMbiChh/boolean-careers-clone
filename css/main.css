@@ -27,7 +27,7 @@
 }
 
 /* Set fonts */
-h1, h2, h3 {
+h1, h2, h3, strong, th, td {
     font-family: gilroy-extraBold;
 }
 
@@ -51,6 +51,18 @@ p, a, li, small {
 
 a {
     text-decoration: none;
+}
+
+.checked_circle_tick {
+    margin: auto;
+    background-color: #006CFA;
+    background-image: url(../images/tick.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
 }
 
 /* Header */
@@ -130,7 +142,6 @@ a {
 .presentation_content_left {
     height: 440px;
     width: 540px;
-    float: left;
 }
 
 .presentation_content_left h1 {
@@ -171,7 +182,6 @@ a {
 .presentation_content_right {
     height: 540px;
     width: 540px;
-    float: right;
 }
 
 .presentation_content_right video {
@@ -180,7 +190,6 @@ a {
 }
 
 /* Tech job section */
-
 .tech_job_section {
     display: flex;
     justify-content: center;
@@ -191,7 +200,7 @@ a {
 }
 
 .tech_job_container h2 {
-    font-size: 50px;
+    font-size: 48px;
     line-height: 40px;
     color: #006CFA;
     margin-bottom: 50px;
@@ -224,4 +233,72 @@ a {
 .tech_job_container small {
     color: white;
     margin-left: 15px;
+}
+
+/* Info table section */
+.info_table_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.info_table_section h2 {
+    font-size: 48px;
+    color: #006CFA;
+    margin-bottom: 45px;
+}
+
+.info_table_section table {
+    table-layout: fixed;
+    width: 1150px;
+}
+
+.info_table_section table th {
+    font-size: 25px;
+    padding-bottom: 60px;
+}
+
+.info_table_section table img {
+    height: 35px;
+}
+
+.info_table_section table td {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.info_table_section table td:nth-child(1) {
+    text-align: left !important;
+}
+
+
+/* Start course section */
+.start_Course_section {
+    background: #F71668;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.start_Course_section h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.start_Course_section a {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.start_Course_section a:hover {
+    background-color: #006CFA !important;
 }
