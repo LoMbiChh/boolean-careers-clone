@@ -1,4 +1,16 @@
-/* External fonts */
+/* CSS reset */
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Import external fonts */
 
 @font-face {
     src: url(../fonts/Gilroy-Medium.ttf);
@@ -20,34 +32,15 @@
     font-family: gilroy-black;
 }
 
-
-/* CSS reset */
-
-* {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
 /* Set fonts */
 
-h1,
-h2,
-h3,
-strong,
-th,
-td {
+h1, h2, h3, strong, th, td {
     font-family: gilroy-extraBold;
 }
 
-p,
-a,
-li,
-small {
+p, a, li, small {
     font-family: gilroy-medium;
 }
-
 
 /* Default button */
 
@@ -78,7 +71,6 @@ a {
     width: 20px;
     border-radius: 100%;
 }
-
 
 /* Header */
 
@@ -136,7 +128,6 @@ header {
     text-decoration: underline;
 }
 
-
 /* Presentation section */
 
 .presentation_section {
@@ -153,15 +144,18 @@ header {
     justify-content: center;
     align-items: center;
     height: 540px;
-    width: 1080px;
+    width: 1150px;
 }
-
 
 /* Presentation content left */
 
 .presentation_content_left {
-    height: 440px;
-    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
 }
 
 .presentation_content_left h1 {
@@ -198,19 +192,20 @@ header {
     color: white !important;
 }
 
-
 /* Presentation content right */
 
 .presentation_content_right {
-    height: 540px;
-    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
 }
 
 .presentation_content_right video {
-    height: 540px;
-    width: 540px;
+    height: 100%;
+    width: 100%;
 }
-
 
 /* Tech job section */
 
@@ -223,16 +218,22 @@ header {
     padding-bottom: 50px;
 }
 
+.tech_job_container {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+}
+
 .tech_job_container h2 {
     font-size: 48px;
-    line-height: 40px;
+    line-height: 48px;
     color: #006CFA;
     margin-bottom: 50px;
 }
 
 .tech_job_three_item_container div {
     float: left;
-    width: 330px;
+    width: 343.3px;
     height: 280px;
     margin-left: 20px;
     margin-right: 20px;
@@ -258,7 +259,6 @@ header {
     color: white;
     margin-left: 15px;
 }
-
 
 /* Info table section */
 
@@ -301,7 +301,6 @@ header {
     text-align: left !important;
 }
 
-
 /* Start course section */
 
 .start_course_section {
@@ -329,7 +328,6 @@ header {
 .start_course_section a:hover {
     background-color: #006CFA !important;
 }
-
 
 /* Footer */
 
@@ -394,14 +392,14 @@ footer {
 
 .company_info_container>div {
     float: left;
-    width: 287.5px;
+    width: 25%;
     height: 100%;
 }
 
 .company_info_badges_container {
     display: flex;
     justify-content: center;
-    width: 575px !important;
+    width: 50% !important;
 }
 
 .company_info_badges_container img {
@@ -421,12 +419,48 @@ footer {
     color: white;
 }
 
-.company_info_link_list_container ul li:nth-child(1)>a,
-.company_info_link_list_container ul li:nth-child(2)>a {
+.company_info_link_list_container ul li:nth-child(1)>a, .company_info_link_list_container ul li:nth-child(2)>a {
     font-size: 18px !important;
     color: #0CD977 !important;
 }
 
 .company_info_link_list_container a:hover {
     color: #006CFA !important;
+}
+
+/* Responsive design */
+
+@media (max-width:1200px) {
+    /* Header */
+    .header_container {
+        width: 950px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    /* Presentation section */
+    .presentation_section {
+        height: 430px;
+    }
+    .presentation_container {
+        width: 950px;
+    }
+    /* Tech job section */
+    .tech_job_container {
+        width: 950px;
+    }
+    .tech_job_three_item_container div {
+        width: 276.66px;
+        height: 300px;
+    }
+    /* Info table section */
+    .info_table_section table {
+        width: 950px;
+    }
+    /* Footer */
+    .company_link_container {
+        width: 950px;
+    }
+    .company_info_container {
+        width: 950px;
+    }
 }
